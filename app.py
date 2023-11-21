@@ -4,6 +4,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
+
 # Load the final model
 with open('model.pkl','rb') as f:
     final_model=pickle.load(f)
