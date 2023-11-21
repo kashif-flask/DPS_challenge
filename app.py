@@ -36,7 +36,7 @@ def predict():
 
         # Make prediction using the final model
         prediction = final_model.predict(input_data)[0]
-
+        prediction=int(prediction)
         return render_template('index.html', prediction=prediction)
 
 if __name__ == '__main__':
